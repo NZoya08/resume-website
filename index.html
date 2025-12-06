@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Bio-Data</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    /* Full-screen welcome overlay */
+    #welcome-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #e6b3ff, #b3c6ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 60px;
+        color: purple;
+        z-index: 9999;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    /* Go to Resume link */
+    .go-resume {
+        display: inline-block;
+        font-size: 50px;
+        font-weight: bold;
+        color: purple;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: all 0.3s ease;
+    }
+    .go-resume:hover {
+        color: #ff66cc;
+        transform: scale(1.1);
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+        animation: fadeInUp 1s ease forwards;
+    }
+
+    .container {
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        border: 5px solid purple;
+        object-fit: cover;
+        margin-top: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    .info-box {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .text-info {
+        text-align: left;
+        color: #3f0063;
+        font-size: 18px;
+    }
+
+    .text-info p b {
+        color: purple;
+    }
+</style>
+</head>
+<body>
+
+<!-- Welcome overlay -->
+<div id="welcome-screen">
+    Welcome to My Website<br>
+    <span style="font-size:24px;"></span>
+</div>
+
+<nav class="navbar">
+    <div class="logo">NZ</div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./resume.html">Resume</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+    <h2>My-Bio Data</h2>
+
+    <div class="info-box">
+        <div class="text-info">
+            <p><b>Name:</b> N Zoya</p>
+            <p><b>Age:</b> 19</p>
+            <p><b>Address:</b> Whitefield, Bangalore</p>
+            <p><b>Phone Number:</b> 9901323744</p>
+            <p><b>Father's Name:</b> R Naseer Ahmed</p>
+            <p><b>Mother's Name:</b> Salma Banu</p>
+        </div>
+
+        <img src="C:\Users\nnene\OneDrive\Desktop\my-website\images\profile.jpg.jpg" alt="Profile Photo" class="profile-img">
+    </div>
+
+    <!-- Go to Resume link -->
+    <div style="text-align:center; margin-top:50px;">
+        <a href="resume.html" class="go-resume" id="resumeBtn">Go to Resume 👉🏻</a>
+    </div>
+</section>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
